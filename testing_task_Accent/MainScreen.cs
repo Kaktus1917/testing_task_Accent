@@ -208,11 +208,6 @@ namespace testing_task_Accent
             graphics.Show();
         }
 
-        private void MainScreen_Deactivate(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void nameEmployee_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) &&
@@ -223,6 +218,11 @@ namespace testing_task_Accent
             {
                 e.Handled = true;
             }
+        }
+
+        private void MainScreen_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

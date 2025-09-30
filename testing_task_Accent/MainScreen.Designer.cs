@@ -433,7 +433,7 @@
             this.Name = "MainScreen";
             this.Text = "MainScreen";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Deactivate += new System.EventHandler(this.MainScreen_Deactivate);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainScreen_FormClosing);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
